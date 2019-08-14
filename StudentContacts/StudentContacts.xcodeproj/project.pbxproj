@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D79322CD22E4CFEC00FA3B08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79322CC22E4CFEC00FA3B08 /* AppDelegate.swift */; };
-		D79322CF22E4CFEC00FA3B08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79322CE22E4CFEC00FA3B08 /* ViewController.swift */; };
+		D79322CF22E4CFEC00FA3B08 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79322CE22E4CFEC00FA3B08 /* HomeViewController.swift */; };
 		D79322D222E4CFEC00FA3B08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D79322D022E4CFEC00FA3B08 /* Main.storyboard */; };
 		D79322D522E4CFEC00FA3B08 /* StudentContacts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D79322D322E4CFEC00FA3B08 /* StudentContacts.xcdatamodeld */; };
 		D79322D722E4CFEF00FA3B08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D79322D622E4CFEF00FA3B08 /* Assets.xcassets */; };
@@ -19,6 +19,10 @@
 		D793230122E4D15200FA3B08 /* StudentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D793230022E4D15200FA3B08 /* StudentDetailViewController.swift */; };
 		D793230322E4D26600FA3B08 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = D793230222E4D26600FA3B08 /* Student.swift */; };
 		D793230722E4D49500FA3B08 /* StudentSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D793230622E4D49500FA3B08 /* StudentSearch.swift */; };
+		D793230922E4E61500FA3B08 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D793230822E4E61500FA3B08 /* DataController.swift */; };
+		D793230C22E5375100FA3B08 /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D793230B22E5375100FA3B08 /* Teacher.swift */; };
+		D793230E22E53A0A00FA3B08 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = D793230D22E53A0A00FA3B08 /* Trip.swift */; };
+		D793231022E53AD600FA3B08 /* TripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D793230F22E53AD600FA3B08 /* TripViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +45,7 @@
 /* Begin PBXFileReference section */
 		D79322C922E4CFEB00FA3B08 /* StudentContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudentContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D79322CC22E4CFEC00FA3B08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D79322CE22E4CFEC00FA3B08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D79322CE22E4CFEC00FA3B08 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D79322D122E4CFEC00FA3B08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D79322D422E4CFEC00FA3B08 /* StudentContacts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StudentContacts.xcdatamodel; sourceTree = "<group>"; };
 		D79322D622E4CFEF00FA3B08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +61,10 @@
 		D793230022E4D15200FA3B08 /* StudentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDetailViewController.swift; sourceTree = "<group>"; };
 		D793230222E4D26600FA3B08 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		D793230622E4D49500FA3B08 /* StudentSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentSearch.swift; sourceTree = "<group>"; };
+		D793230822E4E61500FA3B08 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		D793230B22E5375100FA3B08 /* Teacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teacher.swift; sourceTree = "<group>"; };
+		D793230D22E53A0A00FA3B08 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		D793230F22E53AD600FA3B08 /* TripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +120,7 @@
 				D793230422E4D2B600FA3B08 /* Models */,
 				D79322D022E4CFEC00FA3B08 /* Main.storyboard */,
 				D79322DB22E4CFEF00FA3B08 /* Info.plist */,
+				D793230A22E4E61B00FA3B08 /* Utilities */,
 			);
 			path = StudentContacts;
 			sourceTree = "<group>";
@@ -137,9 +146,10 @@
 		D79322FD22E4D08A00FA3B08 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				D79322CE22E4CFEC00FA3B08 /* ViewController.swift */,
+				D79322CE22E4CFEC00FA3B08 /* HomeViewController.swift */,
 				D79322FE22E4D13500FA3B08 /* StudentsViewController.swift */,
 				D793230022E4D15200FA3B08 /* StudentDetailViewController.swift */,
+				D793230F22E53AD600FA3B08 /* TripViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -150,6 +160,8 @@
 				D79322D322E4CFEC00FA3B08 /* StudentContacts.xcdatamodeld */,
 				D793230222E4D26600FA3B08 /* Student.swift */,
 				D793230622E4D49500FA3B08 /* StudentSearch.swift */,
+				D793230B22E5375100FA3B08 /* Teacher.swift */,
+				D793230D22E53A0A00FA3B08 /* Trip.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -162,6 +174,14 @@
 				D79322D822E4CFEF00FA3B08 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D793230A22E4E61B00FA3B08 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D793230822E4E61500FA3B08 /* DataController.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,11 +315,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D793230E22E53A0A00FA3B08 /* Trip.swift in Sources */,
 				D79322FF22E4D13500FA3B08 /* StudentsViewController.swift in Sources */,
 				D793230322E4D26600FA3B08 /* Student.swift in Sources */,
-				D79322CF22E4CFEC00FA3B08 /* ViewController.swift in Sources */,
+				D79322CF22E4CFEC00FA3B08 /* HomeViewController.swift in Sources */,
 				D793230122E4D15200FA3B08 /* StudentDetailViewController.swift in Sources */,
 				D79322D522E4CFEC00FA3B08 /* StudentContacts.xcdatamodeld in Sources */,
+				D793231022E53AD600FA3B08 /* TripViewController.swift in Sources */,
+				D793230922E4E61500FA3B08 /* DataController.swift in Sources */,
+				D793230C22E5375100FA3B08 /* Teacher.swift in Sources */,
 				D793230722E4D49500FA3B08 /* StudentSearch.swift in Sources */,
 				D79322CD22E4CFEC00FA3B08 /* AppDelegate.swift in Sources */,
 			);
