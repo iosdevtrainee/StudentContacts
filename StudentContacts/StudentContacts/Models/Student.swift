@@ -7,6 +7,7 @@ enum CoreDataError: Error {
 }
 
 class Student: NSManagedObject {
+  
   public static func createStudent(studentInfo: StudentInfo,
                                    context:NSManagedObjectContext) throws -> Student {
     let student = Student()
