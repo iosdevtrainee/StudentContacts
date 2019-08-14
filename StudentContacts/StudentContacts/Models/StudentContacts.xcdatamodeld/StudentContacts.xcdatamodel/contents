@@ -6,8 +6,22 @@
         <attribute name="imageData" optional="YES" attributeType="Transformable" syncable="YES"/>
         <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="teachers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Teacher" inverseName="students" inverseEntity="Teacher" syncable="YES"/>
+    </entity>
+    <entity name="Teacher" representedClassName=".Teacher" syncable="YES" codeGenerationType="category">
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageData" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="students" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Student" inverseName="teachers" inverseEntity="Student" syncable="YES"/>
+    </entity>
+    <entity name="Trip" representedClassName=".Trip" syncable="YES" codeGenerationType="category">
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Student" positionX="-63" positionY="-18" width="128" height="118"/>
+        <element name="Student" positionX="-280.8359375" positionY="8.19921875" width="128" height="133"/>
+        <element name="Teacher" positionX="-463.7734375" positionY="-119.30859375" width="128" height="118"/>
+        <element name="Trip" positionX="-288.4921875" positionY="-139.2265625" width="128" height="75"/>
     </elements>
 </model>
